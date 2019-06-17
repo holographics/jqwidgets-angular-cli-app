@@ -10,7 +10,6 @@ ng serve
 ## Add JQWidgets:
 ```
 npm install jqwidgets-scripts --save
-cd newapp 
 ng serve
 ```
 #### app.module.ts
