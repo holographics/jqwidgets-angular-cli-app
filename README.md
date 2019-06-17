@@ -1,13 +1,68 @@
-# Built from 
+#### Built from 
 `https://www.jqwidgets.com/angular-components-documentation/documentation/angular-cli/angular-cli.htm`
 
-#### Manual build:
+## Build Angular basic:
 ```
 ng new myapp
 cd newapp 
 ng serve
 ```
+## Add JQWidgets:
+```
+npm install jqwidgets-scripts --save
+cd newapp 
+ng serve
+```
+#### app.module.ts
+```
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+import { jqxBarGaugeComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxbargauge';
+@NgModule({
+  declarations: [
+    AppComponent, jqxBarGaugeComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+#### app.component.ts
+```
+import { Component } from '@angular/core';
+ 
+@Component({
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
+})
+ 
+export class AppComponent {
+    values: number[] = [102, 115, 130, 137];
+}
+```
+#### app.component.html
+```
+<jqxBarGauge 
+    [width]="600" [height]="600" [max]="150" 
+    [colorScheme]="'scheme02'" [values]="values">
+</jqxBarGauge>
+```
+#### add to tsconfig.json
+```
+  	"include": [
+	  "src/**/*"
+	],
+	"files": [
+	  "node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxbargauge.ts"
+	]
+```
 
+`ng serve`
 
 # JqwidgetsAngularCliApp
 
