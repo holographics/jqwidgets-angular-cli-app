@@ -1,3 +1,13 @@
+# Built from https://www.jqwidgets.com/angular-components-documentation/documentation/angular-cli/angular-cli.htm
+
+#### Manual build:
+```
+ng new myapp
+cd newapp 
+ng serve
+```
+
+
 # JqwidgetsAngularCliApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
