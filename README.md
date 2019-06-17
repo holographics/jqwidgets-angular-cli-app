@@ -1,4 +1,5 @@
-# Built from https://www.jqwidgets.com/angular-components-documentation/documentation/angular-cli/angular-cli.htm
+# Built from 
+`https://www.jqwidgets.com/angular-components-documentation/documentation/angular-cli/angular-cli.htm`
 
 #### Manual build:
 ```
